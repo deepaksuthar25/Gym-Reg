@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>using plain HTML in pug</title> -->
+    <title>#{title}</title>
+    style
+        include ../static/style.css
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Services</a></li>
+            <li><a href="/">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>Get this gym membership for 60$ - Fill this form now!</h2>
+        <div id="form-group">
+        <form action="/" method="post" id="contact">
+        <input type="text" name="nam" id="name" placeholder="Enter your name">
+        <input type="text" name="age" id="age" placeholder="Enter your age">
+        <input type="email" name="email" id="email" placeholder="Enter E-mail address">
+        <textarea name="address" id="" cols="22" rows="4" placeholder="Enter your full address"></textarea>
+        <textarea name="aboutyou" id="" cols="22" rows="4" placeholder="More about you"></textarea>
+        <button class="btn">Submit</button>
+        </form>
+    </div>
+    </div>
+    
+
+    <!-- <h2>this is heading</h2>
+    <p>
+        |#{message}
+        |<h1>this is heading</h1>
+    </p> -->
+
+</body>
+
+</html>

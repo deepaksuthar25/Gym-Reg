@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    background-color: rgb(65, 61, 61);
+}
+ul{
+    display: flex;
+}
+li{
+    list-style: none;
+    padding: 12px;
+    margin: 16px 22px;
+    font-size: 22px;
+}
+li a{
+    color: rgb(241, 232, 232);
+    text-decoration: none;
+}
+
+.container::before{
+    content: "";
+    background: url(/static/bg.jpg) no-repeat center center/cover ;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /* top: 0px; */
+    left: 0px;
+    z-index: -1;
+    opacity: 0.8;
+}
+.container{
+    text-align: center;
+    height: 100vh;
+}
+
+.container h2{
+    color: white;
+    padding: 33px;
+    font-size: 33px;
+
+}
+
+#form-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 12px auto;
+    padding: 12px 12px;
+    width: 40%;
+    border: 3px solid rgb(235, 229, 229);
+    border-radius: 22px;
+}
+
+form{
+    /* width: 111px; */
+    margin: 12px auto;
+}
+
+form input, textarea{
+    display: block;
+    padding: 10px 72px;
+    margin: 12px auto;
+    border-radius: 12px;
+    border-style: none;
+    border: 2px solid black;
+    font-size: 18px;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.btn{
+    padding: 8px 18px;
+    margin: 18px 12px;
+    border-style: none;
+    border: 2px solid black;
+    background-color: #8585e4;
+    cursor: pointer;
+    font-size: 17px;
+    border-radius: 16px;
+}
